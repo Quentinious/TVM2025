@@ -1,0 +1,19 @@
+AddMul {
+  Expr
+    = AddExpr
+
+  AddExpr
+    = AddExpr "+" MulExpr  -- plus
+    | MulExpr
+
+  MulExpr
+    = MulExpr "*" PriExpr  -- times
+    | PriExpr
+
+  PriExpr
+    = "(" Expr ")"         -- parens
+    | number
+
+  number
+    = digit+
+}
