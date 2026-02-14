@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "out",
+    "rootDir": ".",
+    "target": "ES2018",
+    "module": "CommonJS",
+    "lib": ["ES2021"],
+    "types": ["node", "jest"],
+    "composite": true
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["out"],
+  "references": [
+    {"path": "../lab04"},
+    {"path": "../lab08"},  
+    {"path": "../lab09"},
+    {"path": "../lab10"},
+    {"path": "../mark"},
+    {"path": "../wasm"}
+  ]
+}

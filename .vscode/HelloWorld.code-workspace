@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "HelloWorld",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"fstream": "c",
+			"ostream": "c",
+			"sched.h": "c"
+		}
+	}
+}
